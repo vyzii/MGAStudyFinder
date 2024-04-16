@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #007bff;
+    --dark-blue: #0056b3;
+    --medium-gray: #f4f4f4;
+    --dark-gray: #333333;
+    --white: #ffffff;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 20px;
+    background-color: var(--medium-gray);
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+nav.dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dropbtn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: var(--dark-blue);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--light-gray);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--dark-blue);
+}
+
+.content-section {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+}
+
+.macon-pic img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--light-gray);
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
